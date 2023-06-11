@@ -1,15 +1,15 @@
 React Memory Powerful Web App
 
-TODO fill options with real options
-TODO make a seting component
-TODO add options to state
 TODO create number field
 TODO make next change numer fields showing
-TODO fill guessing
-TODO filll finished
+TODO add options to state
+TODO make a option component
 TODO 
 TODO
 TODO
+TODO fill options with real options
+TODO fill guessing
+TODO filll finished
 TODONE init
 TODONE button
 TODONE numberfield basic
@@ -24,7 +24,7 @@ TODONE
 components
 title X
 options button triggers popup menu
-settings buttons
+settings form
 save settings button
 generate sequence button
 

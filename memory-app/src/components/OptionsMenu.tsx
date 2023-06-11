@@ -1,23 +1,20 @@
+import OptionField from "./OptionField";
 
 const OptionsMenu = () => {
-
-    
+  const onChange = () => {
+    console.log("pppppppp");
+  };
 
   return (
     <>
-      <div className="input-group mb-3">
-        <span className="input-group-text" id="basic-addon1">
-          @
-        </span>
-        <input
-          type="text"
-          className="form-control"
-          placeholder="Username"
-          aria-label="Username"
-          aria-describedby="basic-addon1"
-        ></input>
-      </div>
-
+      <OptionField
+        label="label"
+        type="string"
+        defaultValue="default"
+        onChange={onChange}
+      >
+        NOOOOOO
+      </OptionField>
       <div className="input-group mb-3">
         <input
           type="text"
@@ -82,7 +79,6 @@ const OptionsMenu = () => {
           aria-label="With textarea"
         ></textarea>
       </div>
-      
     </>
   );
 };

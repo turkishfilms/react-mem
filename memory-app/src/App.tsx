@@ -3,7 +3,6 @@ import { useState } from "react";
 import Title from "./components/Title";
 import Button from "./components/Button";
 import OptionsMenu from "./components/OptionsMenu";
-import NumberField from "./components/NumberField";
 import ZenMode from "./components/ZenMode";
 
 const App = () => {
@@ -14,6 +13,25 @@ const App = () => {
     guess: false,
     finish: false,
   });
+
+  const [options, setOptions] = useState({
+    unroundedNum: 50, //at least this many will be shown
+    itemRoundNum: 1, //the multiple of number of items
+    itemCount: 50, //Math.round(unroundedNum / itemRoundNum) * itemRoundNum,
+    itemChoices: [1, 2, 3, 4, 5, 6, 7, 8, 9], //symbol selection
+    mode: { sequential: true, grid: false },
+    numItemsShown: 3,
+    itemsShownSchedule: [], //this schedule will be repeated
+    specialRules: [],//trigger value if trigger is true, value(s) will be omit from selection
+  });
+
+  const [running, setRunning] = useState({
+    items: [],
+    currentIndex: 0,
+    correct: "",
+    raw: "",
+    shown: 0,
+  })
 
   const handleOptionsButton = () => {
     console.log("yo");
@@ -32,7 +50,7 @@ const App = () => {
 
   const handleStartOverButton = () => {
     setView({ ...view, setup: true, zen: false });
-    //return to setup
+
     //TODO LATER setView curretn progress
   };
 
