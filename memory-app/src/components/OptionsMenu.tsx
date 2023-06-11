@@ -1,4 +1,8 @@
-const SettingsMenu = () => {
+
+const OptionsMenu = () => {
+
+    
+
   return (
     <>
       <div className="input-group mb-3">
@@ -78,8 +82,9 @@ const SettingsMenu = () => {
           aria-label="With textarea"
         ></textarea>
       </div>
+      
     </>
   );
 };
 
-export default SettingsMenu;
+export default OptionsMenu;
