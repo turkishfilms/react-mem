@@ -1,0 +1,39 @@
+React Memory Powerful Web App
+
+components
+title X
+options button with popup menu
+settings buttons
+save settings button
+generate sequence button
+
+next set button
+seq display field
+guess field
+submit guess field
+display when user should guess
+
+
+IDEAS
+streamlined,
+so after you input settings and generate seq, 
+there is a button to enter the gauntlet,
+tells current settings below button,
+and it basucally goes zenmode,
+where spacebar gives next set,
+and thats all on screen.
+then it switches to say guess and shows text field, 
+after text is entered, then submit button apears,
+after submision, score is shown
+refresh to restart MVP
+
+TODO WAY LATER
+make a save settings to profile button, using like several presets that are saved in cookies so people can train on their particular problem
+
+toggleable timer, records time spent memeorizing, time spent recalling
+
+next set isnt button activated but time activated after duration in seconds (add setting), 
+
+toggleable progress bar
+
+save reesults button appears lol
